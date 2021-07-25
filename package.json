@@ -1,13 +1,12 @@
 {
   "name": "nut-ups-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "type": "module",
   "author": "Min Idzelis <min123@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "node-nut": "git+https://github.com/midzelis/node-nut.git"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "prettier": "^2.3.2"
