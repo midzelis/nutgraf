@@ -57,7 +57,8 @@ Here's is a sample configuration that uses the generic HTTP Listener v2 to colle
   path = "/nutgraf-collector"
 
   data_format = "json"
-  json_name_key = "nutgraf.ups.name"
+  json_name_key = "nutgraf.measurement.name"
+  tag_keys = ["nutgraf.ups.name"]
 ```
 
 ### Sample Output

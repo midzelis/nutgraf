@@ -1,6 +1,6 @@
 {
   "name": "nutgraf",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "src/nutgraf.js",
   "type": "module",
   "author": "Min Idzelis <min123@gmail.com>",

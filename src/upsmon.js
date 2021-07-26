@@ -107,6 +107,7 @@ export class UPSMonitor {
                     }
                 }
                 vars['nutgraf.ups.name'] = upsname;
+                vars['nutgraf.measurement.name'] = 'nutgraf_ups_data';
 
                 const current = vars['output.current'];
                 const voltage = vars['output.voltage'];
