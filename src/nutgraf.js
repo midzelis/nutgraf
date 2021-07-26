@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
  The MIT License (MIT)
 
@@ -34,13 +35,14 @@ async function main() {
         console.log("Must define env var: NUT_PORT")
         return;
     }
-    const loggingURL = process.env.LOGGING_URL;
+    const loggingURL = process.env.NUTGRAF_LOGGING_URL;
     if (!loggingURL) {
         console.log("Must define env var: LOGGING_URL")
         return;
     }
+    const quiet = process.env.NUTGRAF_QUIET;
 
-    const monitor = new UPSMonitor({ nutHost, nutPort, loggingURL });
+    const monitor = new UPSMonitor({ nutHost, nutPort, loggingURL, quiet });
     await monitor.pollUPS();
 }
 

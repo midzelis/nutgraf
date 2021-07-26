@@ -2,10 +2,10 @@ version: "3"
 services:
   ups-logger2:
     build: .
-    image: ups-logger2
+    image: nutgraf
     environment:
       - NUT_HOST=${NUT_HOST}
       - NUT_PORT=${NUT_PORT}
-      - LOGGING_URL=${LOGGING_URL}
-    container_name: ups-logger2
+      - NUTGRAF_LOGGING_URL=${LOGGING_URL}
+    container_name: nutgraf
     restart: always

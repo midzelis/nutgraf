@@ -12,4 +12,4 @@ RUN yarn install
 
 COPY . .
 
-CMD [ "node", "." ]
+CMD [ "nutgraf" ]

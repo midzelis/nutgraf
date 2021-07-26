@@ -1,10 +1,13 @@
 {
-  "name": "nut-ups-logger",
+  "name": "nutgraf",
   "version": "1.0.1",
-  "main": "src/index.js",
+  "main": "src/nutgraf.js",
   "type": "module",
   "author": "Min Idzelis <min123@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "nutgraf": "src/nutgraf.js"
+  },
   "dependencies": {
     "node-fetch": "^2.6.1"
   },
