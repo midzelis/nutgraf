@@ -125,11 +125,17 @@ export class UPSMonitor {
 
             try {
                 this.log(metrics);
-                await fetch(this.loggingURL, {
+                this.log(`Connecting to: ${this.loggingURL}`);
+                const response = await fetch(this.loggingURL, {
                     method: 'post',
                     body: JSON.stringify(metrics),
                     headers: { 'Content-Type': 'application/json' },
                 });
+                if(response.ok) {
+                    this.log("Data sending was a success!")
+                } else {
+                    console.error("Data sending had error! Response is: ", response.statusText);
+                }
             } catch (e) {
                 //ignore
                 console.error(e);
